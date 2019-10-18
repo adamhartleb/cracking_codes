@@ -20,4 +20,4 @@ def brute_force(message):
         print(''.join(iteration))
 
 
-brute_force("ab")
+brute_force("Dgdp")
