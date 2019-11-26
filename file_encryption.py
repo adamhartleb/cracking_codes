@@ -22,12 +22,15 @@ def decrypt_text(encrypted_text, key):
 
 def fetch_file_content(file_name):
     file = open(file_name, 'r')
-    return file.read()
+    content = file.read()
+    file.close()
+    return content
 
 
 def write_to_disk(file_name, content):
     file = open(file_name, 'w+')
     file.write(content)
+    file.close()
 
 
 @timer
